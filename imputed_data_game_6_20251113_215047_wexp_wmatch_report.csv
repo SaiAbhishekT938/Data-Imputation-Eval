@@ -1,0 +1,45 @@
+Imputation Metrics Report
+
+CONFUSION MATRICES
+
+Field: GAME_TIME
+
+Actual\Predicted,Imputed=TRUE,Imputed=FALSE
+Matched=TRUE,95 (TP),0 (FN)
+Matched=FALSE,21 (FP),2563 (TN)
+
+Total Rows,2679
+Total Imputed,116
+
+Field: PERIOD
+
+Actual\Predicted,Imputed=TRUE,Imputed=FALSE
+Matched=TRUE,1 (TP),0 (FN)
+Matched=FALSE,0 (FP),2678 (TN)
+
+Total Rows,2679
+Total Imputed,1
+
+Field: PLAY_CLOCK
+
+Actual\Predicted,Imputed=TRUE,Imputed=FALSE
+Matched=TRUE,6 (TP),0 (FN)
+Matched=FALSE,9 (FP),2664 (TN)
+
+Total Rows,2679
+Total Imputed,15
+
+METRICS
+
+Field,Accuracy,Precision,Recall,F1 Score,Imputation Rate,Correct Imputation Rate
+game_time,0.9922,0.8190,1.0000,0.9005,0.0433,0.8190
+period,1.0000,1.0000,1.0000,1.0000,0.0004,1.0000
+play_clock,0.9966,0.4000,1.0000,0.5714,0.0056,0.4000
+
+SUMMARY
+
+Metric,Value
+Average Accuracy,0.9963
+Average Precision,0.7397
+Average Recall,1.0000
+Average F1 Score,0.8240
